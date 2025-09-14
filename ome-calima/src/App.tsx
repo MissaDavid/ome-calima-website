@@ -1,4 +1,8 @@
 import './App.css'
+import img1 from './assets/IMG-20250901-WA0001.jpg'
+import img2 from './assets/IMG-20250901-WA0003.jpg'
+import img3 from './assets/IMG-20250908-WA0001.jpg'
+import img4 from './assets/IMG-20250908-WA0002.jpg'
 
 function App() {
   const showForm = (formType: 'self' | 'gift') => {
@@ -29,7 +33,7 @@ function App() {
     }
   };
   return (
-    <div className="app" lang="fr">
+    <div className="app" lang="fr" id="top">
       {/* Skip link for screen reader users */}
       <a href="#main-content" className="skip-link">
         Aller au contenu principal
@@ -38,7 +42,7 @@ function App() {
       <header role="banner">
         <div className="hero-content">
           <img
-            src="/src/assets/IMG-20250908-WA0002.jpg"
+            src={img4}
             alt="Calimendi character in cosmic starry background"
             className="hero-character"
           />
@@ -52,7 +56,6 @@ function App() {
 
         <nav role="navigation" aria-label="Navigation principale">
           <ul className="nav-menu">
-            <li><a href="#home">Accueil</a></li>
             <li><a href="#legend">Légende</a></li>
             <li><a href="#adoption">Adoption</a></li>
             <li><a href="#about">Qui suis-je</a></li>
@@ -62,17 +65,6 @@ function App() {
       </header>
 
       <main id="main-content" role="main">
-        <section id="home" aria-labelledby="home-title">
-          <h2 id="home-title" className="visually-hidden">Bienvenue</h2>
-          <div className="welcome-overlay" role="region" aria-label="Message de bienvenue">
-            <p>
-              Ici, la magie rencontre la douceur de l'artisanat.
-              Chaque création est unique, née de mes mains et porteuse d'une histoire.
-              Cliquez et Ouvrez la porte de ce monde féérique et laissez-vous guider…
-            </p>
-          </div>
-        </section>
-
         <section id="legend" aria-labelledby="legend-title">
           <h2 id="legend-title">La légende des Calimendi</h2>
 
@@ -363,7 +355,7 @@ function App() {
           <div className="image-gallery">
             <div className="gallery-item featured">
               <img
-                src="/src/assets/IMG-20250901-WA0001.jpg"
+                src={img1}
                 alt="Premier Calimendi créé par Lauriane - poupée artisanale avec fleur dans les cheveux, représentant le lien mère-fille"
                 loading="lazy"
               />
@@ -375,7 +367,7 @@ function App() {
 
             <div className="gallery-item">
               <img
-                src="/src/assets/IMG-20250901-WA0003.jpg"
+                src={img2}
                 alt="Vue détaillée du premier Calimendi montrant les détails artisanaux et les matériaux utilisés"
                 loading="lazy"
               />
@@ -387,7 +379,7 @@ function App() {
 
             <div className="gallery-item design-inspiration">
               <img
-                src="/src/assets/IMG-20250908-WA0001.jpg"
+                src={img3}
                 alt="Logo noir et blanc Calimendi - design épuré montrant une créature magique dans un cercle étoilé"
                 loading="lazy"
               />
@@ -399,7 +391,7 @@ function App() {
 
             <div className="gallery-item art-concept">
               <img
-                src="/src/assets/IMG-20250908-WA0002.jpg"
+                src={img4}
                 alt="Illustration artistique d'un Calimendi dans un univers étoilé - inspiration créative pour les futures créations"
                 loading="lazy"
               />
