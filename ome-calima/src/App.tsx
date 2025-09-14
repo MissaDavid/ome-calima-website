@@ -36,10 +36,19 @@ function App() {
       </a>
 
       <header role="banner">
-        <h1>Calimendi - Univers des Ome Calima</h1>
-        <p className="subtitle">
-          Bienvenue dans l'Univers des Ome Calima et de leurs précieux Calimendi.
-        </p>
+        <div className="hero-content">
+          <img
+            src="/src/assets/IMG-20250908-WA0002.jpg"
+            alt="Calimendi character in cosmic starry background"
+            className="hero-character"
+          />
+          <div className="hero-text">
+            <h1>Calimendi - Univers des Ome Calima</h1>
+            <p className="subtitle">
+              Bienvenue dans l'Univers des Ome Calima et de leurs précieux Calimendi.
+            </p>
+          </div>
+        </div>
 
         <nav role="navigation" aria-label="Navigation principale">
           <ul className="nav-menu">
